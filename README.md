@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Books Task Backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the backend API for the **Books Task** application. The backend is built using **Node.js** and **Express** framework. It connects to a **MongoDB** database using **Mongoose** ORM, and provides routes for managing books data.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **MongoDB Atlas** integration to store and retrieve book data.
+- **CORS** configuration to allow cross-origin requests from both local and deployed frontend.
+- Provides **RESTful APIs** for managing books:
+  - `GET /api/books` - Retrieve all books
+  - 
+## Requirements
 
-### `npm start`
+- Node.js (v14 or higher)
+- MongoDB Atlas account
+- `.env` file for environment variables
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nomi908/books-task-frontend.git
+   cd books-task-backend
+Install dependencies:
 
-### `npm test`
+bash
+Copy
+Edit
+npm install
+Create a .env file in the root directory of the project and add your MongoDB URI:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+env
+Copy
+Edit
+MONGODB_URI=your_mongodb_atlas_connection_string
+Start the server locally:
 
-### `npm run build`
+bash
+Copy
+Edit
+npm start
+The server will run on https://books-task-production.up.railway.app/api/books.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Environment Variables
+MONGODB_URI: MongoDB Atlas connection URI. You can get this from your MongoDB Atlas dashboard.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+CORS Configuration
+This backend allows cross-origin requests from:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Local frontend: http://localhost:3000
 
-### `npm run eject`
+Deployed frontend: https://books-task-frontend.vercel.app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If you're working with a local frontend, make sure it's running on localhost:3000 or update the CORS settings accordingly.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Deployment
+Deploying on Railway:
+Connect the repository to Railway.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Set the environment variables on Railway (same as .env file).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Deploy the backend by following Railway's deployment instructions.
 
-## Learn More
+Contributing
+Feel free to fork this repository and submit pull requests. Make sure to add appropriate tests for any new features you introduce.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+markdown
+Copy
+Edit
 
-### Code Splitting
+### Key Sections:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Features**: Describes what the backend does (e.g., managing books, CORS, API routes).
+2. **Requirements**: Lists dependencies such as Node.js and MongoDB Atlas.
+3. **Installation**: Steps to clone and run the project locally.
+4. **Environment Variables**: Explains the necessary environment variables, such as the MongoDB URI.
+5. **CORS Configuration**: Specifies the allowed frontend URLs (local and deployed).
+6. **Deployment**: Guides for deploying the backend (e.g., Railway or other platforms).
+7. **Contributing**: Instructions for others to contribute to the project.
+8. **License**: Adds a standard open-source license note.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Aap is **`README.md`** file ko apne project directory mein add kar sakte hain aur project ke baare mein zaroori details share kar sakte hain. Agar koi additional sections chaahiye ho ya koi specific info chahiye ho, toh bata sakte hain! 😊
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
