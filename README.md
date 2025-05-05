@@ -8,7 +8,7 @@ This is the backend API for the **Books Task** application. The backend is built
 - **CORS** configuration to allow cross-origin requests from both local and deployed frontend.
 - Provides **RESTful APIs** for managing books:
   - `GET /api/books` - Retrieve all books
-  - 
+
 ## Requirements
 
 - Node.js (v14 or higher)
@@ -82,9 +82,7 @@ Edit
 7. **Contributing**: Instructions for others to contribute to the project.
 8. **License**: Adds a standard open-source license note.
 
----
 
-Aap is **`README.md`** file ko apne project directory mein add kar sakte hain aur project ke baare mein zaroori details share kar sakte hain. Agar koi additional sections chaahiye ho ya koi specific info chahiye ho, toh bata sakte hain! 😊
 
 
 
