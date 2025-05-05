@@ -15,7 +15,7 @@ const BooksList = () => {
   const booksPerPage = 10;
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/books')
+    axios.get('https://books-task-production.up.railway.app/api/books')
       .then(response => {
         if (response.data && Array.isArray(response.data)) {
           setBooks(response.data);
