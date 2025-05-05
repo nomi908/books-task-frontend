@@ -10,7 +10,7 @@ const BookDetails = () => {
 
   useEffect(() => {
     // Fetch book details by ISBN
-    axios.get(`http://localhost:5000/api/books/${isbn}`)
+    axios.get(`https://books-task-production.up.railway.app/api/books/${isbn}`)
       .then(response => {
         setBook(response.data);
         setLoading(false);
